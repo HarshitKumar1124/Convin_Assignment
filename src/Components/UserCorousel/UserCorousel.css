@@ -1,0 +1,40 @@
+.SwiperContainer{
+
+    /* border: 2px solid red; */
+    height: 100%;
+    padding: 2vmax;
+    background-color: #23262E;
+
+}
+
+.Slide{
+    background-color: rgba(57, 61, 72,0.5);
+    color: white;
+    /* border: 2px solid green; */
+    border-radius: 1vmax 0.5vmax 1vmax 0.5vmax;
+}
+
+.active{
+    background: linear-gradient(#3E85F3,#184C9C);
+}
+
+
+
+/* Usercard */
+
+.userCard{
+    display: flex;
+    padding: 1vmax;
+
+}
+
+.userCard div{
+    /* border: 2px solid red; */
+    padding: 1vmax 0 0 1vmax;
+    width: 100%;
+}
+
+.userCard img{
+    width: 20%;
+    border-radius: 0.5vmax;
+}

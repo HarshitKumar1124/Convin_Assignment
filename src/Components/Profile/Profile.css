@@ -1,0 +1,26 @@
+
+
+.UserCard{
+    color: white !important;
+    box-shadow: 0 0 3px white;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1vmax;
+    background-color: #848CA3;
+    
+
+}
+
+p{
+    font-style: italic;
+    font-weight: bolder;
+}
+
+img{
+    width: 100%;
+    /* box-shadow: 0 0 3px white; */
+    
+}

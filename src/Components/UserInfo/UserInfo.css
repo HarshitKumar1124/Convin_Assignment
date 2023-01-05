@@ -1,0 +1,28 @@
+
+
+
+
+
+.UserInfoBox{
+    height: 100%;
+    background-color: #242833;
+    
+}
+
+.heading{
+    font-style: normal !important;
+    font-size: 2vmax !important;
+    color: #c1c3d0 !important;
+    padding: 1vmax;
+    text-align: center;
+    
+}
+
+
+
+.info{
+    /* border:2px solid white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

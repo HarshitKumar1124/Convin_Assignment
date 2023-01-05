@@ -1,0 +1,45 @@
+svg{
+    color: white;
+    font-size: 1.5vmax !important;
+    margin: 0.5vmax;
+}
+
+.DetailBox{
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 100%;
+}
+
+.DisplayInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid green; */
+    height: 100%;
+}
+
+.DisplayInfo div{
+    /* border: 2px solid orange; */
+    width: 100%;
+    margin: 1vmax;
+    padding: 1vmax;
+   
+}
+
+.Glass{
+  
+
+
+/* From https://css.glass */
+background: transparent;
+border-radius: 0.5vmax;
+box-shadow: 0 0px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(1px);
+-webkit-backdrop-filter: blur(2.3px);
+
+
+
+padding: 1vmax;
+
+}
