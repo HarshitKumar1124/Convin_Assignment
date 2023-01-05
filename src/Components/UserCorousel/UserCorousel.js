@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect, useState} from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import UserCard from "./UserCard.js"
@@ -11,11 +11,40 @@ import "swiper/css/pagination"
 import "./UserCorousel.css"
 
 import SwiperCore, { Pagination, Navigation,Mousewheel } from "swiper/core";
+import axios from "axios";
 
 
 SwiperCore.use([Pagination, Navigation,Mousewheel]);
 
 const UserCorousel = () => {
+
+  const [ActiveStatus,setActive]= useState(false)
+
+  const [AllUser,setAllUser] = useState([]);
+
+
+  const APICall=async()=>{
+
+    const {data} = await axios.get('https://reqres.in/api/users')
+
+    console.log(data.data)
+
+    if(data.data)
+    setAllUser(data.data)
+
+
+  }
+  
+  useEffect(() => {
+
+    APICall();
+
+  }, [])
+  
+
+
+
+
   return (
     <>
       <Swiper
@@ -27,10 +56,15 @@ const UserCorousel = () => {
        
         
       >
-        <SwiperSlide className="Slide " ><UserCard/></SwiperSlide>
-        <SwiperSlide className="Slide active " ><UserCard/></SwiperSlide>
-        <SwiperSlide className="Slide " ><UserCard/></SwiperSlide>
-        <SwiperSlide className="Slide " ><UserCard/></SwiperSlide>
+
+        {AllUser ?<>
+          {
+            AllUser.map((item)=> {return <SwiperSlide className="Slide slides" key={item.id}  ><UserCard userinfo={item}  /></SwiperSlide>})
+          }
+        </>:<h4>No Users</h4>
+        }
+        
+       
       
       </Swiper>
 
