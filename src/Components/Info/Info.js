@@ -23,6 +23,7 @@ const Info = () => {
     <div className="DetailBox">
         <div className="DisplayInfo">
           <div>
+            <div>
             <FolderSharedIcon/>
             <input
             
@@ -35,8 +36,10 @@ const Info = () => {
               readOnly
               disabled
             />
+            </div>
 
-            <FormatAlignJustifyIcon/>
+           <div>
+           <FormatAlignJustifyIcon/>
             <input
             
             style={{color:"white"}}
@@ -48,6 +51,7 @@ const Info = () => {
               readOnly
               disabled
             />
+           </div>
           </div>
           <div>
             <EmailIcon/>

@@ -61,3 +61,15 @@
 }
 
 
+
+
+
+@media only screen and (max-width: 1200px)  {
+
+    .NextPageUser{
+        position: relative;
+        left: 43%
+    }
+
+    
+}

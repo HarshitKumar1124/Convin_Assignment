@@ -29,7 +29,7 @@ const Loader = () => {
             src={HK}
             alt="Project By Harshit Kumar"
             title="Project By Harshit Kumar"
-            style={{ width: "60%", margin: "1vmax" }}
+            style={{ width: "60%", margin: "1vmax",border:"none" }}
           />
 
           <CircularProgress size="5rem" color="inherit" />

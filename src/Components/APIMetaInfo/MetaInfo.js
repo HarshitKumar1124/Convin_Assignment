@@ -13,7 +13,7 @@ const MetaInfo = () => {
 
     const {loading,AllUsers} = useSelector(state=>state.getUsers)
 
-    console.log(AllUsers)
+
 
     useEffect(() => {
       

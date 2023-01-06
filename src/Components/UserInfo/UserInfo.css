@@ -15,7 +15,7 @@
     color: #c1c3d0 !important;
     padding: 1vmax;
     text-align: center;
-    
+    margin:1vmax !important
 }
 
 
@@ -25,4 +25,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media only screen and (max-width: 1200px)  {
+
+    .heading{
+        font-size: 4vmax !important;
+
+    }
+
+    
 }

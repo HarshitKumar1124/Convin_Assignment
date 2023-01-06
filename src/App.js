@@ -40,10 +40,10 @@ const App = () => {
               className="Display-section justify-content-md-center"
               style={{ margin: "0vmax", height: "75%" }}
             >
-              <Col md={8} className="Panel mx-3 px-0">
+              <Col md={12}xl={8} className="Panel Row1Col mx-3 px-0">
                 <UserInfo />
               </Col>
-              <Col md={2} className="mx-3">
+              <Col md={12} xl={2} className="mx-3 Row1Col">
                 <APIMetaInfo />
               </Col>
             </Row>

@@ -50,15 +50,20 @@ const UserCorousel = () => {
   return (
     <>
       {
-        AllUsers ?( AllUsers.page!=AllUsers.total_pages?<Button onClick={()=>{
+        AllUsers ?( AllUsers.page!=AllUsers.total_pages?<Button className="NextPageUser" onClick={()=>{
           SetPage(Page+1);
-        }} style={{backgroundColor:"dodgerblue",color:"white",margin:"1vmax"}}>Next Page {AllUsers.page}/{AllUsers.total_pages}</Button>:<Button onClick={()=>{
+        }} style={{backgroundColor:"dodgerblue",color:"white",margin:"1vmax"}}>Next Page {AllUsers.page}/{AllUsers.total_pages}</Button>:<Button className="NextPageUser" onClick={()=>{
           SetPage(1);
         }} style={{backgroundColor:"dodgerblue",color:"white",margin:"1vmax"}}>First Page {AllUsers.page}/{AllUsers.total_pages}</Button>):<></>
       }
 
       <Swiper
         slidesPerView={3}
+        breakpoints={{
+          1200: { slidesPerView: 3},
+          768:{slidesPerView:2},
+          0:{slidesPerView:1}
+        }}
         spaceBetween={20}
         navigation={true}
         className="mySwiper SwiperContainer"
