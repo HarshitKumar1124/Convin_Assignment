@@ -11,7 +11,8 @@ const UserInfo = () => {
   return (
     <Container fluid className='UserInfoBox mx-0 px-0' >
         <Typography className="heading">Welcome to the C.O.N.V.I.N</Typography>
-        <Row style={{height:"86%"}}>
+        <Row style={{height:"auto",margin:"1.3vmax 0"}}>
+          {/* border:"2px solid orangered" */}
           {/* border:"2px solid red" */}
             <Col className="UserDP info" md={5}><Profile/></Col>
             <Col className="UserText info" md={7}><Info/></Col>

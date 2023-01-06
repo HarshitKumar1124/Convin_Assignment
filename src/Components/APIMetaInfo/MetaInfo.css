@@ -1,0 +1,17 @@
+.APIPanel{
+    height: 50%;
+    background-color: #242833;
+    border-radius: 2vmax;
+    box-shadow: 0 0 3px rgba(255, 255, 255,0.7);
+}
+
+.API_column>*{
+    margin: 1vmax 0vmax;
+}
+
+.API_column>p{
+    text-align: center;
+    margin: 1vmax 0;
+    font-weight: bolder;
+    font-style: normal;
+}

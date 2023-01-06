@@ -10,6 +10,8 @@
     align-items: center;
     border-radius: 1vmax;
     background-color: #848CA3;
+    padding: 1vmax;
+    margin-bottom: 1vmax;
     
 
 }
@@ -17,10 +19,14 @@
 p{
     font-style: italic;
     font-weight: bolder;
+    margin-top: 1vmax;
 }
 
 img{
     width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10 10px rgb(99, 97, 97);
     /* box-shadow: 0 0 3px white; */
+
     
 }

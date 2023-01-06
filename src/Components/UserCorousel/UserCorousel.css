@@ -1,9 +1,11 @@
 .SwiperContainer{
 
     /* border: 2px solid red; */
-    height: 100%;
+    height:auto;
+
     padding: 1vmax !important;
     background-color: #23262E;
+    
 
 }
 
@@ -13,11 +15,12 @@
     /* border: 2px solid green; */
     border-radius: 1vmax 0.5vmax 1vmax 0.5vmax;
     transition: all 0.3s ease-in-out;
+    margin-bottom: 2vmax;
 }
 
 .slides:hover{
     transform: translateY(-0.5vmax) !important;
-    box-shadow: 0 0 10px #184C9C ;
+    box-shadow: 0 0 10px #aac2e8 ;
     cursor: pointer;
 }
 
@@ -34,6 +37,7 @@
 .userCard{
     display: flex;
     padding: 1vmax;
+    /* border: 2px solid orange; */
   
 
 }
@@ -42,9 +46,18 @@
     /* border: 2px solid red; */
     padding: 1vmax 0 0 1vmax;
     width: 100%;
+    
 }
 
 .userCard img{
     width: 20%;
     border-radius: 0.5vmax;
+    
 }
+
+
+.activeUser{
+    background: linear-gradient(#3E85F3,#184C9C);
+}
+
+

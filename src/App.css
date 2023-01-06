@@ -5,8 +5,9 @@
 }
 
 .AppBox{
-  height: 100vh;
+  height: 100%;
   background-color: #181B20;
+  margin-bottom: 0;
 }
 
 .Display-section{
@@ -17,10 +18,11 @@
 }
 
 .Panel{
-  box-shadow: 0 0 3px rgba(255, 255, 255,0.7);
+  /* box-shadow: 0 0 3px rgba(255, 255, 255,0.7); */
   /* border: 2px solid #6C727F; */
   border-radius: 1vmax;
   overflow: hidden;
+  
 }
 
 
