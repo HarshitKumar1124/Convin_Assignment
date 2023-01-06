@@ -3,6 +3,7 @@ import "./Info.css";
 import EmailIcon from '@material-ui/icons/Email';
 import FolderSharedIcon from '@material-ui/icons/FolderShared';
 import FormatAlignJustifyIcon from '@material-ui/icons/FormatAlignJustify';
+import Loader from "../Loader/Loader"
 
 import { useSelector } from "react-redux";
 
@@ -19,7 +20,7 @@ const Info = () => {
 
 
 
-    {loading==true?<></>:<>
+    {loading==true?<Loader/>:<>
     <div className="DetailBox">
         <div className="DisplayInfo">
           <div>

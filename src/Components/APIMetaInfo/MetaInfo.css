@@ -17,6 +17,14 @@
     
 }
 
+.API_column img{
+   
+        border: none !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+    
+}
+
 .API_column>p{
     text-align: center;
     margin: 1vmax 0;

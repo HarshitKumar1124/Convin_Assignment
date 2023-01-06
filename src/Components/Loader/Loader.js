@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Backdrop from "@material-ui/core/Backdrop";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import HK from "../../Images/HK.png";
+import "./Loader.css"
 
 const Loader = () => {
   const [open, setOpen] = React.useState(false);
@@ -29,7 +30,8 @@ const Loader = () => {
             src={HK}
             alt="Project By Harshit Kumar"
             title="Project By Harshit Kumar"
-            style={{ width: "60%", margin: "1vmax",border:"none" }}
+            style={{ width: "60%", margin: "1vmax"}}
+            id="LoaderImage"
           />
 
           <CircularProgress size="5rem" color="inherit" />
